@@ -1,7 +1,8 @@
-type MyParameters<T extends (...args: any[]) => any> = any
+type MyParameters<T extends (...args: any[]) => any> = T extends (...any: infer S) => any ? S : any
 
 
 
 /* 
-  没搞懂...args，等梯子恢复了再回来
+  1.判断是否函数类型
+  2.依次返回参数的类型
 */
