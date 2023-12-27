@@ -6,5 +6,5 @@ type DeepReadonly<T> = {
 
 
 /* 
-  暂时理解keyof T[Key] extends never，理解不透never
+  keyof是期待一个对象类型的
 */
